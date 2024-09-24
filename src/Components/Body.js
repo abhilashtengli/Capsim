@@ -16,7 +16,7 @@ const Body = () => {
       ),
     },
     {
-      path: "/",
+      path: "/about",
       element: (
         <Suspense fallback={<div>About Us Loading...</div>}>
           <AboutUs />
@@ -24,7 +24,7 @@ const Body = () => {
       ),
     },
     {
-      path: "/",
+      path: "/product",
       element: (
         <Suspense fallback={<div>Product page Loading...</div>}>
           <Product />
@@ -32,7 +32,7 @@ const Body = () => {
       ),
     },
     {
-      path: "/",
+      path: "/contact",
       element: (
         <Suspense fallback={<div></div>}>
           <Contact />{" "}

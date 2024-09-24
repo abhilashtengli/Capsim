@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-gradient-right-to-left {
+  @apply text-transparent;
+
+  /* Specify the gradient colors */
+  background-image: linear-gradient(to left, #a757da, #a757da, #6c6c70, #6c6c70, #4682B4, #4682B4, #a757da, #a757da);
+  /* White to emerald-600 */
+  -webkit-background-clip: text;
+  background-clip: text;
+}

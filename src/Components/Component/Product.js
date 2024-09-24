@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
 
 const Product = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Header />
+    </>
+  );
+};
 
-export default Product
+export default Product;
