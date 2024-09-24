@@ -3,14 +3,16 @@ import Header from "./Header";
 import img1 from "../../Images/Blood And Iron.jpeg";
 import img2 from "../../Images/ferro aluminum.jpeg";
 import img3 from "../../Images/Silicon Manganese.jpeg";
-import img4 from "../../Images/ferrosilicomanganese.jpg";
+// import container from "../../Images/container.jpeg";
+// import lab_working from "../../Images/lab_working.jpg";
 import BgBox from "./BgBox";
+import HomeMid from "./HomeMid";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <BgBox rowNum={100} />
+      <BgBox rowNum={50} />
       <div
         className="absolute  lg:block -z-10 overflow-hidden rotate-45 blur-xl  lg:px-36"
         aria-hidden="true"
@@ -97,11 +99,11 @@ const Home = () => {
             />
           </div>
           <div className="flex justify-center">
-            <img
+            {/* <img
               alt=""
               src={img4}
               className="w-48 h-52 cover m-7 border border-gray-400 rounded-lg "
-            />
+            /> */}
             <img
               alt=""
               src={img3}
@@ -110,6 +112,57 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className="mt-10  border-black flex justify-center">
+        <div className="left w-[50%] pl-24   py-12 px-5">
+          <h1 className="text-4xl  font-semibold text-zinc-600">
+            What we offer?
+          </h1>
+          <p className="tracking-wide text-lg mt-5 text-zinc-600">
+            At capsim, we are dedicated to being your premier partner in the
+            ferro-silico manganese industry. Combining our strengths as both a
+            producer/exporter and a supplier/sourcer, we offer a comprehensive
+            range of high-quality ferro-silico manganese products tailored to
+            meet the diverse needs of the global steelmaking industry
+          </p>
+        </div>
+        <div className="right w-[50%]  py-12 px-5">
+          <h1 className="text-4xl  font-semibold text-zinc-600">Product</h1>
+          <p className="tracking-wide text-lg mt-5 text-zinc-600">
+            Ferro-silico manganese is an essential ferroalloy in the steelmaking
+            industry, composed of manganese, silicon, and iron. This versatile
+            alloy is renowned for enhancing the quality and performance of steel
+            products through its key roles in deoxidation, desulfurization, and
+            alloying.
+          </p>
+        </div>
+      </div>
+      <div className="mt-10  border-black flex justify-center pb-28">
+        <div className="left w-[50%] pl-24   grid place-content-center">
+          <h1 className="text-4xl  font-semibold text-zinc-600">Our Mission</h1>
+          <p className="tracking-wide text-lg mt-5 text-zinc-600">
+            Our mission is to deliver exceptional ferro-silico manganese
+            solutions that enhance the quality, performance, and sustainability
+            of steel products across various industries. By integrating in-house
+            production with strategic sourcing, we ensure our clients receive
+            reliable, cost-effective, and superior ferroalloy products that
+            drive their success.
+          </p>
+        </div>
+        <div className="right w-[50%]  flex justify-center">
+          <img
+            alt=""
+            className="w-48 m-10 border border-gray-400 rounded-lg"
+            src={container}
+          />
+          <img
+            alt=""
+            className="w-48 m-10 border border-gray-400 rounded-lg"
+            src={lab_working}
+          />
+        </div>
+      </div> */}
+      <HomeMid />
     </>
   );
 };
