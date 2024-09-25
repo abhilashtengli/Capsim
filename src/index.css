@@ -11,3 +11,13 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+.right-to-left {
+  @apply text-transparent;
+
+  /* Specify the gradient colors */
+  background-image: linear-gradient(to left,red, blue, gray );
+  /* White to emerald-600 */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
