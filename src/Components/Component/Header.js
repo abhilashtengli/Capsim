@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="border-b border-blue-200 w-full py-5 px-20 flex justify-between bg-blue-100 fixed bg-opacity-30">
+      <div className="border-b border-blue-200 w-full py-5 px-20 flex justify-between bg-blue-100 fixed bg-opacity-50">
         <div className="left w-[40%]">
           <Link to="/">
             <img alt="" src={cspsim_logo} className="w-32" />
