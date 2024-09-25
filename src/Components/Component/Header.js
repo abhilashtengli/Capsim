@@ -12,18 +12,29 @@ const Header = () => {
         </div>
         <div className="right   w-[60%] grid place-content-center">
           <ul className=" flex justify-center text-lg">
-            <li className="mx-16 text-lg font-semibold text-blue-500 border bg-white rounded-lg bg-opacity-50 px-3">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="mx-16 text-lg font-semibold text-blue-500 border bg-white rounded-lg bg-opacity-50 px-3">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="mx-16 text-lg font-semibold text-blue-500 border bg-white rounded-lg bg-opacity-50 px-3">
-              <Link to="/product">Product</Link>
-            </li>
-            <li className="mx-16 text-lg font-semibold text-blue-500 border bg-white rounded-lg bg-opacity-50 px-3">
-              <Link to="/contact">Contact</Link>
-            </li>
+            <Link to="/">
+              {" "}
+              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+                Home
+              </li>{" "}
+            </Link>
+            <Link to="/about">
+              {" "}
+              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+                About
+              </li>{" "}
+            </Link>
+            <Link to="/product">
+              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+                Product
+              </li>{" "}
+            </Link>
+            <Link to="/contact">
+              {" "}
+              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+                Contact
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
