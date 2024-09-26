@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import CapsimAddress from "./CapsimAddress";
+import DelayedComponent from "./DelayedComponent";
 
 const Contact = () => {
   useEffect(() => {
@@ -109,9 +110,12 @@ const Contact = () => {
         ) : (
           ""
         )}
+        <DelayedComponent state="animate-left-to-right">
+
         <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold pl-40">
           Contact
         </h1>
+        </DelayedComponent>
         <p className="mt-5 pl-40 text-lg">
           For inquiries, quotes, or more information about our products, please
           reach out to us.

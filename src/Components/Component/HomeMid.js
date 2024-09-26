@@ -1,6 +1,8 @@
 import React from "react";
 import container from "../../Images/container.jpeg";
 import lab_working from "../../Images/lab_working.jpg";
+import DelayedComponent from "./DelayedComponent";
+
 const HomeMid = () => {
   return (
     <div>
@@ -33,55 +35,74 @@ const HomeMid = () => {
       </div>
       <div className="mt-10  border-black flex justify-center">
         <div className="left w-[50%] pl-24   py-12 px-5">
-          <h1 className="text-4xl  font-semibold text-zinc-600">
-            What we offer?
-          </h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            <span className="font-semibold"> At capsim,</span> we are dedicated
-            to being your premier partner in the
-            <span className="font-semibold"> ferro-silico manganese </span>{" "}
-            industry. Combining our strengths as both a
-            <span className="font-semibold">producer/exporter </span> and a{" "}
-            <span className="font-semibold">supplier/sourcer,</span> we offer a
-            comprehensive range of high-quality ferro-silico manganese products
-            tailored to meet the diverse needs of the{" "}
-            <span className="font-semibold">global steelmaking industry </span>
-          </p>
+          <DelayedComponent state="animate-left-to-right">
+            <h1 className="text-4xl  font-semibold text-zinc-600">
+              What we offer?
+            </h1>
+          </DelayedComponent>
+          <DelayedComponent state="animate-left-to-right">
+            <p className="tracking-wide  text-lg mt-5 text-zinc-600">
+              <span className="font-semibold"> At capsim,</span> we are
+              dedicated to being your premier partner in the
+              <span className="font-semibold">
+                {" "}
+                ferro-silico manganese{" "}
+              </span>{" "}
+              industry. Combining our strengths as both a
+              <span className="font-semibold">producer/exporter </span> and a{" "}
+              <span className="font-semibold">supplier/sourcer,</span> we offer
+              a comprehensive range of high-quality ferro-silico manganese
+              products tailored to meet the diverse needs of the{" "}
+              <span className="font-semibold">
+                global steelmaking industry{" "}
+              </span>
+            </p>
+          </DelayedComponent>
         </div>
         <div className="right w-[50%]  py-12 px-5">
-          <h1 className="text-4xl  font-semibold text-zinc-600">Product</h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            <span className="font-semibold">Ferro-silico manganese </span> is an
-            essential <span className="font-semibold">ferroalloy</span> in the
-            steelmaking industry, composed of manganese, silicon, and iron. This
-            versatile alloy is renowned for enhancing the quality and
-            performance of steel products through its key roles in deoxidation,
-            desulfurization, and alloying.
-          </p>
+          <DelayedComponent state="animate-right-to-left">
+            <h1 className="text-4xl  font-semibold text-zinc-600">Product</h1>
+          </DelayedComponent>
+          <DelayedComponent state="animate-right-to-left">
+            <p className="tracking-wide text-lg mt-5 text-zinc-600">
+              <span className="font-semibold">Ferro-silico manganese </span> is
+              an essential <span className="font-semibold">ferroalloy</span> in
+              the steelmaking industry, composed of manganese, silicon, and
+              iron. This versatile alloy is renowned for enhancing the quality
+              and performance of steel products through its key roles in
+              deoxidation, desulfurization, and alloying.
+            </p>
+          </DelayedComponent>
         </div>
       </div>
       <div className="mt-10  border-black flex justify-center pb-28">
         <div className="left w-[50%] pl-24   grid place-content-center">
-          <h1 className="text-4xl  font-semibold text-zinc-600">Our Mission</h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            Our mission is to{" "}
-            <span className="font-semibold"> deliver exceptional </span>{" "}
-            ferro-silico manganese solutions that enhance the quality,
-            performance, and sustainability of steel products across various
-            industries. By integrating in-house production with strategic
-            sourcing, we ensure our clients receive reliable, cost-effective,
-            and superior ferroalloy products that drive their success.
-          </p>
+          <DelayedComponent state="animate-left-to-right">
+            <h1 className="text-4xl  font-semibold text-zinc-600">
+              Our Mission
+            </h1>
+          </DelayedComponent>
+          <DelayedComponent state="animate-left-to-right">
+            <p className="tracking-wide text-lg mt-5 text-zinc-600">
+              Our mission is to{" "}
+              <span className="font-semibold"> deliver exceptional </span>{" "}
+              ferro-silico manganese solutions that enhance the quality,
+              performance, and sustainability of steel products across various
+              industries. By integrating in-house production with strategic
+              sourcing, we ensure our clients receive reliable, cost-effective,
+              and superior ferroalloy products that drive their success.
+            </p>
+          </DelayedComponent>
         </div>
         <div className="right w-[50%]  flex justify-center">
           <img
             alt=""
-            className="w-48 m-10 border border-gray-400 rounded-lg"
+            className="w-48 m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
             src={container}
           />
           <img
             alt=""
-            className="w-48 m-10 border border-gray-400 rounded-lg"
+            className="w-48 m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
             src={lab_working}
           />
         </div>

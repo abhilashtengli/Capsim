@@ -21,3 +21,89 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFrombottom {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-left-to-right {
+  animation: slideFromLeft 0.5s ease-out forwards;
+}
+
+.animate-right-to-left {
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+
+.animate-top-to-bottom {
+  animation: slideFromTop 0.5s ease-out forwards;
+}
+
+.animate-bottom-to-top50 {
+  animation: slideFrombottom 0.4s ease-out forwards;
+}
+
+.animate-bottom-to-top {
+  animation: animate-bottom-to-top 0.7s ease-in-out;
+  /* Animation duration and easing */
+}
+
+@keyframes animate-bottom-to-top {
+  from {
+    transform: translateY(6%);
+    /* Start off-screen from the bottom */
+    opacity: 0;
+    /* Start invisible */
+  }
+
+  to {
+    transform: translateY(0);
+    /* End in original position */
+    opacity: 1;
+    /* End fully visible */
+  }
+}
