@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import BgBox from "./BgBox";
 import img1 from "../../Images/Silicon Manganese.jpeg";
 import img2 from "../../Images/ferrosilicomanganese.jpg";
+import Footer from "./Footer";
 const Product = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Header />
@@ -64,14 +71,14 @@ const Product = () => {
       </div>
       <div>
         <BgBox rowNum={5} />
-        <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold pl-40">
+        <h1 className="text-4xl w-full  text-zinc-600 pt-32 font-semibold pl-40">
           Product
         </h1>
         <h2 className="text-3xl text-zinc-600 pt-5 font-semibold pl-40 text-gradient-right-to-left">
           Ferro-Silico Manganese
         </h2>
       </div>
-      <div className=" w-full ">
+      <div className=" w-full mb-20">
         <div className="intro py-7 flex justify-between items-start">
           <div className="tracking-wide text-lg text-justify leading-8  pl-40  w-[57%]">
             <p>
@@ -81,7 +88,7 @@ const Product = () => {
               performance of steel products through its key roles in
               deoxidation, desulfurization, and alloying.
             </p>
-            <div className="mt-5 text-start border">
+            <div className="mt-5 text-start ">
               <h1 className="text-2xl font-semibold text-zinc-600">
                 Application
               </h1>
@@ -142,7 +149,36 @@ const Product = () => {
             </h2>
           </div>
         </div>
+        <div className="text-lg tracking-wide text-justify px-20">
+          <h2 className="mt-16 font-semibold text-4xl  text-center text-gradient-right-to-left text-zinc-700">
+            Key Benefits
+          </h2>
+
+          <div className=" border-black p-3 gap-4 grid grid-cols-2 mt-5">
+            <h2 className="text-start border rounded-lg bg-blue-100 bg-opacity-20 p-2 border-gray-400 ">
+              <span className="font-semibold ">Quality Enhancement: </span>
+              Improves the strength and durability of steel, resulting in
+              superior end products.
+            </h2>
+            <h2 className="text-start border rounded-lg bg-blue-100 bg-opacity-20 p-2 border-gray-400  ">
+              <span className="font-semibold ">Versatile Applications: </span>
+              Suitable for a wide range of steel grades, including construction,
+              automotive, and industrial applications.
+            </h2>
+            <h2 className="text-start border rounded-lg bg-blue-100 bg-opacity-20 p-2 border-gray-400  ">
+              <span className="font-semibold ">Cost Efficiency:</span>
+              Cost Efficiency: Optimises production processes by reducing
+              impurities, leading to costeffective steel manufacturing.
+            </h2>
+            <h2 className="text-start border rounded-lg bg-blue-100 bg-opacity-20 p-2 border-gray-400  ">
+              <span className="font-semibold ">Sustainable Production:</span>
+              Contributes to cleaner steelmaking practices by promoting
+              environmentally responsible methods.
+            </h2>
+          </div>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

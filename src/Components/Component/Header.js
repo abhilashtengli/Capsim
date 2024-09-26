@@ -14,24 +14,24 @@ const Header = () => {
           <ul className=" flex justify-center text-lg">
             <Link to="/">
               {" "}
-              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-16 text-lg font-semibold hover:bg-orange-400 hover:bg-opacity-45 hover:border-blue-300 transition duration-400 hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Home
               </li>{" "}
             </Link>
             <Link to="/about">
               {" "}
-              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-16 text-lg font-semibold hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 About
               </li>{" "}
             </Link>
             <Link to="/product">
-              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-16 text-lg font-semibold hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Product
               </li>{" "}
             </Link>
             <Link to="/contact">
               {" "}
-              <li className="mx-16 text-lg font-semibold text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-16 text-lg font-semibold hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Contact
               </li>
             </Link>

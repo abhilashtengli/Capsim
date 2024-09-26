@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import BgBox from "./BgBox";
 import img1 from "../../Images/Blood And Iron.jpeg";
 import img2 from "../../Images/truck container.jpeg";
 import img3 from "../../Images/ferro aluminum.jpeg";
 import BgColor from "./bgColor";
+import Footer from "./Footer";
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Header />
@@ -286,6 +293,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

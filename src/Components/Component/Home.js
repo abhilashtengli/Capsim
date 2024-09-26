@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import img1 from "../../Images/Blood And Iron.jpeg";
 import img2 from "../../Images/ferro aluminum.jpeg";
@@ -7,8 +7,15 @@ import img3 from "../../Images/Silicon Manganese.jpeg";
 // import lab_working from "../../Images/lab_working.jpg";
 import BgBox from "./BgBox";
 import HomeMid from "./HomeMid";
+import Footer from "./Footer";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Header />
@@ -69,6 +76,7 @@ const Home = () => {
       </div>
 
       <div className=" w-full flex justify-center  pt-24">
+        <BgBox rowNum={8} />
         <div className="left   w-[50%] grid place-content-center pl-20">
           <h1 className="text-5xl text-zinc-700 text-gradient-right-to-left">
             Welcome to <span className="font-semibold text-5xl">Capsim</span>
@@ -113,56 +121,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="mt-10  border-black flex justify-center">
-        <div className="left w-[50%] pl-24   py-12 px-5">
-          <h1 className="text-4xl  font-semibold text-zinc-600">
-            What we offer?
-          </h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            At capsim, we are dedicated to being your premier partner in the
-            ferro-silico manganese industry. Combining our strengths as both a
-            producer/exporter and a supplier/sourcer, we offer a comprehensive
-            range of high-quality ferro-silico manganese products tailored to
-            meet the diverse needs of the global steelmaking industry
-          </p>
-        </div>
-        <div className="right w-[50%]  py-12 px-5">
-          <h1 className="text-4xl  font-semibold text-zinc-600">Product</h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            Ferro-silico manganese is an essential ferroalloy in the steelmaking
-            industry, composed of manganese, silicon, and iron. This versatile
-            alloy is renowned for enhancing the quality and performance of steel
-            products through its key roles in deoxidation, desulfurization, and
-            alloying.
-          </p>
-        </div>
-      </div>
-      <div className="mt-10  border-black flex justify-center pb-28">
-        <div className="left w-[50%] pl-24   grid place-content-center">
-          <h1 className="text-4xl  font-semibold text-zinc-600">Our Mission</h1>
-          <p className="tracking-wide text-lg mt-5 text-zinc-600">
-            Our mission is to deliver exceptional ferro-silico manganese
-            solutions that enhance the quality, performance, and sustainability
-            of steel products across various industries. By integrating in-house
-            production with strategic sourcing, we ensure our clients receive
-            reliable, cost-effective, and superior ferroalloy products that
-            drive their success.
-          </p>
-        </div>
-        <div className="right w-[50%]  flex justify-center">
-          <img
-            alt=""
-            className="w-48 m-10 border border-gray-400 rounded-lg"
-            src={container}
-          />
-          <img
-            alt=""
-            className="w-48 m-10 border border-gray-400 rounded-lg"
-            src={lab_working}
-          />
-        </div>
-      </div> */}
       <HomeMid />
+      <Footer />
     </>
   );
 };
