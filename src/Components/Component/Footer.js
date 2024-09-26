@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="border bg-blue-200 grid grid-cols-3 place-content-center bg-opacity-20 pt-10 pb-16">
+      <div className=" bg-blue-200 grid grid-cols-3 place-content-center bg-opacity-10 pt-10 pb-6 ">
         <div className=" border-black gap-3 grid place-content-center">
           <img className="w-20 ml-1" alt="" src={capsim_img} />
           <section className="border flex justify-center gap-3 items-start">
@@ -54,9 +54,9 @@ const Footer = () => {
             </p>
           </section>
         </div>
-        <div className=" border-black gap-4 -mt-5 flex flex-col items-center justify-center">
-          <h1 className="text-lg text-zinc-600 font-semibold">Quick Links</h1>
-          <ul className="text-zinc-600 text-base font-semibold ">
+        <div className=" border-black gap-2 -mt-5 flex flex-col items-center justify-center">
+          <h1 className="text-lg text-zinc-600 font-semibold">QUICK LINKS</h1>
+          <ul className="text-zinc-600 text-base font-semibold -ml-9">
             <Link to="/">
               <li className="my-1 hover:text-black">Home</li>
             </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className=" border-black flex flex-col gap-4 justify-start items-center">
-          <h1 className="text-lg text-zinc-600 font-semibold">Social Links</h1>
+          <h1 className="text-lg text-zinc-600 font-semibold">SOCIAL LINKS</h1>
           <ul className="flex gap-7">
             <Link to="/">
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                 </svg>
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/home">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

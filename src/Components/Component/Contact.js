@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { useEffect, useRef, useState } from "react";
 import BgBox from "./BgBox";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import emailjs from "@emailjs/browser";
+import CapsimAddress from "./CapsimAddress";
 
 const Contact = () => {
   useEffect(() => {
@@ -13,67 +13,102 @@ const Contact = () => {
       behavior: "smooth",
     });
   }, []);
+  const form = useRef();
+  const [sentMessage, setSentMessage] = useState(true);
+  const [show, setShow] = useState(false);
+  // const whatsappLink = "https://wa.me/6362566003";
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Extract form values
+    const formData = new FormData(form.current);
+    const values = Object.fromEntries(formData.entries());
+
+    // Validate form fields
+    const errors = {};
+    if (!values.user_name) {
+      errors.user_name = "Required";
+      // console.log("required");
+    }
+    if (!values.user_email) {
+      errors.user_email = "Required";
+      // console.log("required");
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.user_email)
+    ) {
+      errors.user_email = "Invalid email address";
+    }
+    if (!values.country_code) {
+      errors.country_code = "Required";
+    }
+    if (!values.user_mobilenumber) {
+      errors.user_mobilenumber = "Required";
+    }
+
+    if (Object.keys(errors).length !== 0) {
+      return;
+    }
+
+    // If no errors, send the email
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_KEY,
+        process.env.REACT_APP_TEMPLATE_KEY,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setSentMessage(true);
+          setShow(true);
+          setTimeout(() => {
+            setSentMessage(false);
+            setShow(false);
+          }, 5000);
+
+          // Reset the form
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <Header />
-      <BgBox rowNum={50} />
-      <div
-        className="absolute  lg:block -z-10 overflow-hidden rotate-45 blur-xl  lg:px-36"
-        aria-hidden="true"
-      >
-        <div
-          className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-blue-400/50 to-purple-200/50 opacity-30"
-          style={{
-            clipPath: `polygon( 64.1% 74.1%,
-              75.64% 87.44%,
-53.1% 42.24%,
-127.725% 75.239%,
-122.265% 45.143%,
-54.069% 61.34%,
-97.15% 43.55%,
-61.404% 63.648%,
-60.784% 79.996%,
-69.825% 85.701%,
-28.476% 21.735%,
-20.075% 56.991%,
-0.149% 96.701%,
-17.363% 97%,
-33.948% 94.464%,
-10.452% 128.964%,
-57.798% 34.398%`,
-          }}
-        ></div>
-      </div>
-      <div
-        className="absolute  lg:block -z-10 overflow-hidden rotate-180 blur-xl  lg:px-36"
-        aria-hidden="true"
-      >
-        <div
-          className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-purple-400/50 to-purple-200/50 opacity-30"
-          style={{
-            clipPath: `polygon( 64.1% 74.1%,
-              75.64% 87.44%,
-53.1% 42.24%,
-127.725% 75.239%,
-122.265% 45.143%,
-54.069% 61.34%,
-97.15% 43.55%,
-61.404% 63.648%,
-60.784% 79.996%,
-69.825% 85.701%,
-28.476% 21.735%,
-20.075% 56.991%,
-0.149% 96.701%,
-17.363% 97%,
-33.948% 94.464%,
-10.452% 128.964%,
-57.798% 34.398%`,
-          }}
-        ></div>
-      </div>
-
       <div>
         <BgBox rowNum={5} />
+        {show ? (
+          <motion.div
+            className="absolute flex justify-center w-full items-center py-2 z-50"
+            initial={{
+              y: -400,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+          >
+            <h1
+              className={`fixed ${
+                sentMessage ? "bg-green-700" : "bg-red-500"
+              }  rounded-lg w-72 py-1 mt-52 text-white font-semibold text-lg text-center`}
+            >
+              {sentMessage ? "Message sent ✅" : "Message Not Sent !"}
+            </h1>
+          </motion.div>
+        ) : (
+          ""
+        )}
         <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold pl-40">
           Contact
         </h1>
@@ -82,8 +117,8 @@ const Contact = () => {
           reach out to us.
         </p>
       </div>
-      <div className=" w-full px-40 pt-2 gap-5 flex justify-start mb-16">
-        <div className=" py-5 w-[50%] space-y-6">
+      <div className=" w-full px-40 pt-2  gap-5 flex justify-start mb-16">
+        <div className=" py-5 w-[50%] space-y-6 mt-10  pl-20">
           <section className=" flex gap-3 items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +210,7 @@ const Contact = () => {
             </Link>
           </ul>
         </div>
-        <div className=" w-[50%]">
+        <div className=" w-[50%] pl-20">
           <div className="relative  bg-white z-10 lg:mx-0 mx-4  border lg:w-[25rem]  px-5 border-gray-300  pt-10 pb-5 rounded-lg">
             <h2 className="text-xl font-bold mb-4 text-blue-500 text-center animate-bottom-to-top">
               Contact
@@ -221,7 +256,7 @@ const Contact = () => {
               }}
             >
               {({ isSubmitting }) => (
-                <Form>
+                <Form ref={form} onSubmit={sendEmail}>
                   <div className="flex w-full justify-center gap-10">
                     <div className="mb-4">
                       <label
@@ -344,7 +379,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="w-full flex justify-center">
+        <CapsimAddress />
+      </div>
     </>
   );
 };
