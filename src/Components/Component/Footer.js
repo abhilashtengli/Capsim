@@ -76,7 +76,11 @@ const Footer = () => {
             SOCIAL LINKS
           </h1>
           <ul className="flex gap-16 lg:gap-7 mt-5 lg:mt-0">
-            <Link to="/">
+            <a
+              href="http://www.linkedin.com/in/chiraag-lodha-46abb132b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +93,12 @@ const Footer = () => {
                   />
                 </svg>
               </li>
-            </Link>
-            <Link to="/home">
+            </a>
+            <a
+              href="https://x.com/capsim505"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -103,8 +111,12 @@ const Footer = () => {
                   />
                 </svg>
               </li>
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61566286208207"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +129,7 @@ const Footer = () => {
                   />
                 </svg>
               </li>
-            </Link>
+            </a>
           </ul>
         </div>
       </div>

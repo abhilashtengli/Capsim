@@ -12,15 +12,15 @@ const Product = () => {
   }, []);
   return (
     <>
-      <div className="md:px-12">
+      <div className="">
         <BgBox rowNum={5} />
         <DelayedComponent state="animate-left-to-right">
-          <h1 className="text-4xl w-full  text-zinc-600 pt-32 font-semibold px-4 md:px-0 lg:px-0 lg:pl-40">
+          <h1 className="text-4xl w-full  text-zinc-600 pt-32 font-semibold px-4 md:pl-12  lg:px-0 lg:pl-40">
             Product
           </h1>
         </DelayedComponent>
         <DelayedComponent state="animate-bottom-to-top">
-          <h2 className="text-3xl  text-zinc-600 pt-5 font-semibold px-4 md:px-0 lg:px-0 lg:pl-40 text-gradient-right-to-left">
+          <h2 className="text-3xl  text-zinc-600 pt-5 font-semibold px-4 md:px-0 lg:px-0 md:pl-12 lg:pl-40 text-gradient-right-to-left">
             Ferro-Silico Manganese
           </h2>
         </DelayedComponent>

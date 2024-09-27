@@ -59,7 +59,7 @@ const HomeMid = () => {
             </p>
           </DelayedComponent>
         </div>
-        <div className="right lg:w-[50%]  lg:py-12 px-5  border-black ">
+        <div className="right lg:w-[50%]  lg:py-12 px-5 mt-10 lg:mt-0 md:mt-0 border-black ">
           <DelayedComponent state="animate-right-to-left">
             <h1 className="text-4xl  font-semibold text-zinc-600 ">Product</h1>
           </DelayedComponent>
@@ -74,7 +74,6 @@ const HomeMid = () => {
             </p>
           </DelayedComponent>
         </div>
-        
       </div>
       <div className="mt-10  border-black md:flex justify-center px-5 lg:pb-28">
         <div className="left md:w-[50%] lg:w-[50%] lg:pl-24   grid place-content-center">
