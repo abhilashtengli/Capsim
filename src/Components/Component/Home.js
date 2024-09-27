@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import BgBox from "./BgBox";
 import HomeMid from "./HomeMid";
 import DelayedComponent from "./DelayedComponent";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Home = () => {
     <>
       <div className="  border-black md:flex justify-center  pt-24">
         <BgBox rowNum={8} />
-        <div className="left   md:w-[50%] md:grid place-content-center text-center lg:text-start lg:pl-20">
+        <div className="left   md:w-[50%] md:grid place-content-center text-center md:text-start md:pl-10 lg:text-start lg:pl-20">
           <DelayedComponent state="animate-left-to-right">
             <motion.h1
               className="text-5xl text-zinc-700 text-gradient-right-to-left"
@@ -46,8 +47,24 @@ const Home = () => {
             'Global <span className="font-semibold">Reach</span>, Local{" "}
             <span className="font-semibold">Expertise</span>'
           </p>
+          <Link to="/contact">
+            <motion.button
+              className="px-4 py-1 lg:hidden bg-blue-200 bg-opacity-30  mt-10 mb-2 relative rounded-full  text-sm hover:shadow-2xl hover:shadow-blue-500/[0.3] transition duration-200 border button-gradient-border"
+              whileTap={{
+                scale: "0.9",
+              }}
+              whileHover={{
+                scale: "0.95",
+              }}
+            >
+              <div className="absolute inset-x-0 h-[2px] w-2/3 mx-auto -bottom-[2.5px] shadow-2xl  bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
+              <span className="font-semibold text-xl text-zinc-700 mx-3">
+                Contact
+              </span>
+            </motion.button>
+          </Link>
         </div>
-        <div className="right  md:w-[50%]">
+        <div className="right  lg::w-[50%] md:mt-2">
           <DelayedComponent state="animate-bottom-to-top">
             <div className="flex justify-center ">
               <img

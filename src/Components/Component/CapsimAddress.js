@@ -11,7 +11,7 @@ const CapsimAddress = () => {
         loading="lazy"
         title="googleMap"
         referrerPolicy="no-referrer-when-downgrade"
-        className="rounded-2xl  border-2 "
+        className="rounded-lg"
       ></iframe>
     </div>
   );

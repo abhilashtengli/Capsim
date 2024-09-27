@@ -12,6 +12,20 @@
   background-clip: text;
 }
 
+.button-gradient-border {
+
+  padding: 7px 20px;
+
+  border: 3px solid transparent;
+  /* Transparent border for proper effect */
+  background-image: linear-gradient(white, rgb(231, 231, 245)),
+    /* Fallback background */
+    linear-gradient(to left, #4682B4, #a757da, #a757da, #4682B4, #4682B4, #6c6c70, #6c6c70, #4682B4, #4682B4, #a757da);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  /* transition: background 0.4s ease; */
+}
+
 .right-to-left {
   @apply text-transparent;
 

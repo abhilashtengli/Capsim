@@ -111,11 +111,11 @@ const Contact = () => {
           ""
         )}
         <DelayedComponent state="animate-left-to-right">
-          <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold px-4 lg:px-0 lg:pl-40">
+          <h1 className="text-4xl w-full  text-zinc-600  md:px-12 pt-32 font-semibold px-4 lg:px-0 lg:pl-40">
             Contact
           </h1>
         </DelayedComponent>
-        <p className="mt-5 lg:pl-40 px-4 lg:px-0 text-lg">
+        <p className="mt-5 lg:pl-40 px-4 md:pl-12 lg:px-0 text-lg">
           For inquiries, quotes, or more information about our products, please
           reach out to us.
         </p>
@@ -168,13 +168,13 @@ const Contact = () => {
               info@capsim.in
             </p>
           </section>
-          <ul className="flex gap-16 -ml-1">
+          <ul className="flex gap-16  -ml-1">
             <Link to="/">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     fill="#4682b4"
@@ -188,7 +188,7 @@ const Contact = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     fill="#4682b4"
@@ -202,7 +202,7 @@ const Contact = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     fill="#4682b4"
@@ -311,7 +311,7 @@ const Contact = () => {
                       <Field
                         type="number"
                         name="country_code"
-                        className="form-input w-full p-1 px-2 border border-purple-600 rounded-lg animate-bottom-to-top"
+                        className="form-input w-full p-1 px-2 border border-blue-500 rounded-lg animate-bottom-to-top"
                       />
                       <ErrorMessage
                         name="country_code"

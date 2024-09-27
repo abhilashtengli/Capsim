@@ -17,14 +17,14 @@ const AboutUs = () => {
       <div>
         <BgBox rowNum={5} />
         <DelayedComponent state="animate-left-to-right ">
-          <h1 className="text-4xl w-full  text-zinc-600 px-4   pt-32 font-semibold lg:pl-40">
+          <h1 className="text-4xl w-full  text-zinc-600 px-4 md:pl-12   pt-32 font-semibold lg:pl-40">
             About
           </h1>
         </DelayedComponent>
       </div>
       <div className=" w-full  border-black ">
         <div className="intro py-7 lg:flex justify-between">
-          <div className="tracking-wide text-lg text-justify lg:leading-8  lg:pl-40 lg:px-0 px-4  lg:w-[60%]">
+          <div className="tracking-wide text-lg text-justify lg:leading-8 md:px-12  lg:pl-40 lg:px-0 px-4  lg:w-[60%]">
             <DelayedComponent state="animate-bottom-to-top">
               <p>
                 At Capsim, we pride ourselves on being a trusted and leading

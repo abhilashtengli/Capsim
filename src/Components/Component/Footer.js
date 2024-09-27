@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="  border-black bg-blue-200 lg:pl-0  lg:grid lg:grid-cols-3 lg:place-content-center bg-opacity-10 pt-10 pb-6 ">
+      <div className="  border-black bg-blue-200 md:pl-10 lg:pl-0 md:grid grid-cols-2 md:place-content-center lg:grid lg:grid-cols-3 lg:place-content-center bg-opacity-30 mt-10 lg:mt-0 pt-5  lg:pt-10 pb-6 ">
         <div className=" border-black gap-3 lg:grid pl-5 place-content-center">
           <img className=" w-24 lg:w-20 ml-1" alt="" src={capsim_img} />
           <section className=" flex lg:justify-center gap-3 items-start lg:mt-0 mt-5">
@@ -19,7 +19,8 @@ const Footer = () => {
               />
             </svg>
             <p className="w-60 text-base font-semibold text-zinc-600">
-              28-12-13/2 2nd floor, Suryabagh, Visakhapatnam, Andhra Pradesh Pin code - 530020
+              28-12-13/2 2nd floor, Suryabagh, Visakhapatnam, Andhra Pradesh Pin
+              code - 530020
             </p>
           </section>
           <section className="flex  gap-3 items-start">
@@ -71,7 +72,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className=" border-black lg:mt-0 mt-5 flex flex-col gap-4 justify-start items-center">
-          <h1 className="text-lg text-zinc-600 font-semibold tracking-wider lg:tracking-normal">SOCIAL LINKS</h1>
+          <h1 className="text-lg text-zinc-600 font-semibold tracking-wider lg:tracking-normal">
+            SOCIAL LINKS
+          </h1>
           <ul className="flex gap-16 lg:gap-7 mt-5 lg:mt-0">
             <Link to="/">
               <li>

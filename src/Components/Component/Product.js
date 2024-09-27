@@ -12,22 +12,22 @@ const Product = () => {
   }, []);
   return (
     <>
-      <div className="">
+      <div className="md:px-12">
         <BgBox rowNum={5} />
         <DelayedComponent state="animate-left-to-right">
-          <h1 className="text-4xl w-full  text-zinc-600 pt-32 font-semibold px-4 lg:px-0 lg:pl-40">
+          <h1 className="text-4xl w-full  text-zinc-600 pt-32 font-semibold px-4 md:px-0 lg:px-0 lg:pl-40">
             Product
           </h1>
         </DelayedComponent>
         <DelayedComponent state="animate-bottom-to-top">
-          <h2 className="text-3xl  text-zinc-600 pt-5 font-semibold px-4 lg:px-0 lg:pl-40 text-gradient-right-to-left">
+          <h2 className="text-3xl  text-zinc-600 pt-5 font-semibold px-4 md:px-0 lg:px-0 lg:pl-40 text-gradient-right-to-left">
             Ferro-Silico Manganese
           </h2>
         </DelayedComponent>
       </div>
       <div className=" w-full lg:mb-20 mb-5 ">
         <div className="intro py-7 lg:flex justify-between items-start">
-          <div className="tracking-wide text-lg lg:text-justify leading-8  lg:pl-40 lg:px-0 px-4 lg:w-[57%]">
+          <div className="tracking-wide text-lg md:px-12 lg:text-justify leading-8  lg:pl-40 lg:px-0 px-4 lg:w-[57%]">
             <p>
               Ferro-silico manganese is an essential ferroalloy in the
               steelmaking industry, composed of manganese, silicon, and iron.
@@ -54,19 +54,19 @@ const Product = () => {
               </h2>
             </div>
           </div>
-          <div className=" lg:w-[43%] flex flex-col lg:flex-row items-center justify-center lg:px-0 px-4 ">
+          <div className=" lg:w-[43%] flex flex-col  lg:flex-row items-center justify-center lg:px-0 px-4 ">
             <DelayedComponent state="animate-left-to-right">
               <img
                 alt=""
                 src={img1}
-                className="lg:w-72 rounded-lg lg:mx-5 lg:-mt-96 hover:scale-110 transition duration-500"
+                className="lg:w-72 rounded-lg lg:mx-5 lg:-mt-72 hover:scale-110 transition duration-500"
               />
             </DelayedComponent>
             <DelayedComponent state="animate-right-to-left">
               <img
                 alt=""
                 src={img2}
-                className="lg:w-72 lg:mt-28 cover rounded-lg my-5 hover:scale-110 transition duration-500"
+                className="lg:w-72 lg:mt-28 cover rounded-lg my-5 border border-black hover:scale-110 transition duration-500"
               />
             </DelayedComponent>
           </div>
