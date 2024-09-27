@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Body from "./Components/Body";
 function App() {
   return (
-    <div className="App ">
+    <div className="App w-full">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Body />}>

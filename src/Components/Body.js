@@ -8,17 +8,18 @@ import ScrollToTopButton from "./Component/ScrollToTopButton";
 const Body = () => {
   return (
     <>
-      <Header />
-      <ScrollToTopButton />
-      <BgBox rowNum={50} />
-      <div
-        className="absolute  lg:block -z-10 overflow-hidden rotate-45 blur-xl  lg:px-36"
-        aria-hidden="true"
-      >
+      <div className="w-full">
+        <Header />
+        <ScrollToTopButton />
+        <BgBox rowNum={50} />
         <div
-          className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-blue-400/50 to-purple-200/50 opacity-30"
-          style={{
-            clipPath: `polygon( 64.1% 74.1%,
+          className="absolute  lg:block -z-10 overflow-hidden rotate-45 blur-xl  lg:px-36"
+          aria-hidden="true"
+        >
+          <div
+            className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-blue-400/50 to-purple-200/50 opacity-30"
+            style={{
+              clipPath: `polygon( 64.1% 74.1%,
               75.64% 87.44%,
 53.1% 42.24%,
 127.725% 75.239%,
@@ -35,17 +36,17 @@ const Body = () => {
 33.948% 94.464%,
 10.452% 128.964%,
 57.798% 34.398%`,
-          }}
-        ></div>
-      </div>
-      <div
-        className="absolute  lg:block -z-10 overflow-hidden rotate-180 blur-xl  lg:px-36"
-        aria-hidden="true"
-      >
+            }}
+          ></div>
+        </div>
         <div
-          className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-purple-400/50 to-purple-200/50 opacity-30"
-          style={{
-            clipPath: `polygon( 64.1% 74.1%,
+          className="absolute  lg:block -z-10 overflow-hidden rotate-180 blur-xl  lg:px-36"
+          aria-hidden="true"
+        >
+          <div
+            className="mx-auto aspect-[1240/678] w-72 lg:w-[45.1875rem] overflow-hidden bg-gradient-to-tr from-purple-400/50 to-purple-200/50 opacity-30"
+            style={{
+              clipPath: `polygon( 64.1% 74.1%,
               75.64% 87.44%,
 53.1% 42.24%,
 127.725% 75.239%,
@@ -62,11 +63,12 @@ const Body = () => {
 33.948% 94.464%,
 10.452% 128.964%,
 57.798% 34.398%`,
-          }}
-        ></div>
+            }}
+          ></div>
+        </div>
+        <Outlet />
+        <Footer />
       </div>
-      <Outlet />
-      <Footer />
     </>
   );
 };

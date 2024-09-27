@@ -16,15 +16,15 @@ const AboutUs = () => {
     <>
       <div>
         <BgBox rowNum={5} />
-        <DelayedComponent state="animate-left-to-right">
-          <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold pl-40">
+        <DelayedComponent state="animate-left-to-right ">
+          <h1 className="text-4xl w-full  text-zinc-600 px-4   pt-32 font-semibold lg:pl-40">
             About
           </h1>
         </DelayedComponent>
       </div>
-      <div className=" w-full ">
-        <div className="intro py-7 flex justify-between">
-          <div className="tracking-wide text-lg text-justify leading-8  pl-40  w-[60%]">
+      <div className=" w-full  border-black ">
+        <div className="intro py-7 lg:flex justify-between">
+          <div className="tracking-wide text-lg text-justify lg:leading-8  lg:pl-40 lg:px-0 px-4  lg:w-[60%]">
             <DelayedComponent state="animate-bottom-to-top">
               <p>
                 At Capsim, we pride ourselves on being a trusted and leading
@@ -53,20 +53,32 @@ const AboutUs = () => {
               </p>
             </DelayedComponent>
           </div>
-          <div className=" w-[40%] flex items-center justify-center ">
+          <div className=" lg:w-[40%] lg:flex items-center justify-center ">
             <DelayedComponent state="animate-bottom-to-top">
-              <img alt="" src={img1} className="w-56 rounded-lg mx-5 hover:scale-110 transition duration-500" />
+              <img
+                alt=""
+                src={img1}
+                className="w-56 rounded-lg mx-5 hidden lg:block hover:scale-110 transition duration-500"
+              />
             </DelayedComponent>
             <DelayedComponent state="animate-bottom-to-top">
-              <div className=" flex flex-col justify-between py-4">
-                <img alt="" src={img2} className="w-44 cover rounded-lg my-5 hover:scale-110 transition duration-500" />
-                <img alt="" src={img3} className="w-44 cover rounded-lg my-5 hover:scale-110 transition duration-500" />
+              <div className=" flex flex-col justify-between px-4 py-4">
+                <img
+                  alt=""
+                  src={img2}
+                  className="lg:w-44 cover rounded-lg my-5 hover:scale-110 transition duration-500"
+                />
+                <img
+                  alt=""
+                  src={img3}
+                  className="lg:w-44 cover rounded-lg my-5 hover:scale-110 transition duration-500"
+                />
               </div>
             </DelayedComponent>
           </div>
         </div>
 
-        <div className=" w-full border-black mb-3 text-lg tracking-wide text-justify p-20">
+        <div className=" w-full  border-black mb-3 text-lg tracking-wide px-4 lg:text-justify lg:p-20">
           <div className="card1 grid place-content-center">
             <h1 className="text-4xl text-gradient-right-to-left   text-center font-semibold text-zinc-600">
               What we Do?
@@ -75,8 +87,8 @@ const AboutUs = () => {
               <span className="font-semibold text-xl">capsim </span> operates on
               a dual front to provide unparalleled value to our customers:
             </p>
-            <div className="flex gap-4 mt-4">
-              <div className=" w-[50%] ">
+            <div className="lg:flex gap-4 mt-4">
+              <div className=" lg:w-[50%] ">
                 <DelayedComponent state="animate-left-to-right">
                   <div className="border bg-blue-100 bg-opacity-20 p-5 border-gray-400 rounded-lg">
                     <p className=" font-bold">1. Production & Exportation:</p>
@@ -102,7 +114,7 @@ const AboutUs = () => {
                 </DelayedComponent>
               </div>
 
-              <div className=" w-[50%] ">
+              <div className=" lg:w-[50%] lg:mt-0 mt-5">
                 <DelayedComponent state="animate-right-to-left">
                   <div className="border bg-blue-100 bg-opacity-20 p-5 border-gray-400 rounded-lg">
                     <p className="font-bold">2. Sourcing & Supply:</p>
@@ -136,7 +148,7 @@ const AboutUs = () => {
               Why Choose capsim?{" "}
             </h1>
             <DelayedComponent state="animate-left-to-right">
-              <div className=" grid grid-cols-3 gap-4 mt-5 text-start">
+              <div className=" grid lg:grid-cols-3 gap-4 mt-5 text-start">
                 <div className="box1 border rounded-lg bg-blue-100 bg-opacity-20 p-5 border-gray-400 ">
                   <p className=" leading-7 ">
                     <span className="font-semibold"> Unmatched Quality: </span>{" "}
@@ -198,7 +210,7 @@ const AboutUs = () => {
               Our Vision
             </h1>
             <DelayedComponent state="animate-left-to-right">
-              <p className="leading-7 border rounded-lg bg-blue-100 bg-opacity-20 p-5 border-gray-400 mt-5">
+              <p className="lg:leading-7 border rounded-lg bg-blue-100 bg-opacity-20 p-5 border-gray-400 mt-5">
                 To be the global leader in ferro-silico manganese, recognised
                 for our integrated approach that combines superior production
                 capabilities with strategic sourcing. We aim to set new
@@ -208,12 +220,12 @@ const AboutUs = () => {
             </DelayedComponent>
           </div>
           <BgColor />
-          <div className="card3 grid place-content-center mt-16">
+          <div className="card4 grid place-content-center mt-16">
             <h1 className="text-4xl text-gradient-right-to-left   text-center font-semibold text-zinc-600">
               Our Values
             </h1>
             <DelayedComponent state="animate-left-to-right">
-              <div className=" text-start grid grid-cols-3 gap-4 mt-5">
+              <div className=" text-start grid lg:grid-cols-3 gap-4 mt-5">
                 <div className="box1 border rounded-lg bg-blue-100 bg-opacity-20 p-5 border-gray-400 ">
                   <p className=" leading-7">
                     <span className="font-semibold">Quality Assurance: </span>
@@ -254,7 +266,7 @@ const AboutUs = () => {
           </div>
           <BgColor />
 
-          <div className="card3 grid place-content-center mt-16">
+          <div className="card5 grid place-content-center mt-16">
             <h1 className="text-4xl text-gradient-right-to-left   text-center font-semibold text-zinc-600">
               Join Us on Our Journey
             </h1>

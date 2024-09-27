@@ -16,9 +16,9 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className=" w-full flex justify-center  pt-24">
+      <div className="  border-black md:flex justify-center  pt-24">
         <BgBox rowNum={8} />
-        <div className="left   w-[50%] grid place-content-center pl-20">
+        <div className="left   md:w-[50%] md:grid place-content-center text-center lg:text-start lg:pl-20">
           <DelayedComponent state="animate-left-to-right">
             <motion.h1
               className="text-5xl text-zinc-700 text-gradient-right-to-left"
@@ -42,32 +42,25 @@ const Home = () => {
             </span>{" "}
             products for the steelmaking industry.
           </p>
-          <p className="text-5xl mt-24 text-zinc-700 text-gradient-right-to-left">
+          <p className="text-5xl mt-10 lg:mt-24 text-zinc-700 text-gradient-right-to-left ">
             'Global <span className="font-semibold">Reach</span>, Local{" "}
             <span className="font-semibold">Expertise</span>'
           </p>
         </div>
-        <div className="right  w-[50%]">
+        <div className="right  md:w-[50%]">
           <DelayedComponent state="animate-bottom-to-top">
-            <motion.div
-              className="flex justify-center "
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                duration: 0.2,
-              }}
-            >
+            <div className="flex justify-center ">
               <img
                 alt=""
                 src={img1}
-                className="w-48  m-7 border hover:scale-110 transition duration-500 border-gray-400 rounded-lg"
+                className="w-32 object-cover lg:w-48  m-7 border hover:scale-110 transition duration-500 border-gray-400 rounded-lg"
               />
               <img
                 alt=""
                 src={img2}
-                className="w-48 cover m-7 border hover:scale-110 transition duration-500 border-gray-400 rounded-lg "
+                className="w-32  object-cover lg:w-48 cover m-7 border hover:scale-110 transition duration-500 border-gray-400 rounded-lg "
               />
-            </motion.div>
+            </div>
             <div className="flex justify-center">
               <img
                 alt=""

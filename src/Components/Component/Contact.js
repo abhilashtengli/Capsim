@@ -111,18 +111,17 @@ const Contact = () => {
           ""
         )}
         <DelayedComponent state="animate-left-to-right">
-
-        <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold pl-40">
-          Contact
-        </h1>
+          <h1 className="text-4xl w-full  text-zinc-600   pt-32 font-semibold px-4 lg:px-0 lg:pl-40">
+            Contact
+          </h1>
         </DelayedComponent>
-        <p className="mt-5 pl-40 text-lg">
+        <p className="mt-5 lg:pl-40 px-4 lg:px-0 text-lg">
           For inquiries, quotes, or more information about our products, please
           reach out to us.
         </p>
       </div>
-      <div className=" w-full px-40 pt-2  gap-5 flex justify-start mb-16">
-        <div className=" py-5 w-[50%] space-y-6 mt-10  pl-20">
+      <div className=" w-full lg:px-40 pt-2  gap-5 flex lg:flex-row flex-col items-center lg:items-start justify-start mb-16">
+        <div className=" py-5 lg:w-[50%]   space-y-6 lg:mt-10  lg:pl-20">
           <section className=" flex gap-3 items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -214,8 +213,8 @@ const Contact = () => {
             </Link>
           </ul>
         </div>
-        <div className=" w-[50%] pl-20">
-          <div className="relative  bg-white z-10 lg:mx-0 mx-4  border lg:w-[25rem]  px-5 border-gray-300  pt-10 pb-5 rounded-lg">
+        <div className=" lg:w-[50%] lg:pl-20">
+          <div className="relative  bg-white z-10 lg:mx-0 mx-4  border lg:w-[25rem]  px-5 border-blue-500  pt-10 pb-5 rounded-lg">
             <h2 className="text-xl font-bold mb-4 text-blue-500 text-center animate-bottom-to-top">
               Contact
             </h2>

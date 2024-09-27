@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-blue-200 grid grid-cols-3 place-content-center bg-opacity-10 pt-10 pb-6 ">
-        <div className=" border-black gap-3 grid place-content-center">
-          <img className="w-20 ml-1" alt="" src={capsim_img} />
-          <section className="border flex justify-center gap-3 items-start">
+      <div className="  border-black bg-blue-200 lg:pl-0  lg:grid lg:grid-cols-3 lg:place-content-center bg-opacity-10 pt-10 pb-6 ">
+        <div className=" border-black gap-3 lg:grid pl-5 place-content-center">
+          <img className=" w-24 lg:w-20 ml-1" alt="" src={capsim_img} />
+          <section className=" flex lg:justify-center gap-3 items-start lg:mt-0 mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -19,8 +19,7 @@ const Footer = () => {
               />
             </svg>
             <p className="w-60 text-base font-semibold text-zinc-600">
-              28-12-13/2 2nd floor, Suryabagh, Visakhapatnam, Andhra Pradesh Pin
-              code - 530020
+              28-12-13/2 2nd floor, Suryabagh, Visakhapatnam, Andhra Pradesh Pin code - 530020
             </p>
           </section>
           <section className="flex  gap-3 items-start">
@@ -54,7 +53,7 @@ const Footer = () => {
             </p>
           </section>
         </div>
-        <div className=" border-black gap-2 -mt-5 flex flex-col items-center justify-center">
+        <div className="hidden  border-black gap-2 lg:-mt-5 lg:flex flex-col items-center justify-center">
           <h1 className="text-lg text-zinc-600 font-semibold">QUICK LINKS</h1>
           <ul className="text-zinc-600 text-base font-semibold -ml-9">
             <Link to="/">
@@ -71,9 +70,9 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-        <div className=" border-black flex flex-col gap-4 justify-start items-center">
-          <h1 className="text-lg text-zinc-600 font-semibold">SOCIAL LINKS</h1>
-          <ul className="flex gap-7">
+        <div className=" border-black lg:mt-0 mt-5 flex flex-col gap-4 justify-start items-center">
+          <h1 className="text-lg text-zinc-600 font-semibold tracking-wider lg:tracking-normal">SOCIAL LINKS</h1>
+          <ul className="flex gap-16 lg:gap-7 mt-5 lg:mt-0">
             <Link to="/">
               <li>
                 <svg

@@ -5,12 +5,12 @@ const Header = () => {
   return (
     <>
       <div className="border-b z-20 border-blue-200 w-full py-5 px-20 flex justify-between bg-blue-100 fixed bg-opacity-50">
-        <div className="left w-[40%]">
+        <div className="left md:w-[40%]">
           <Link to="/home">
             <img alt="" src={cspsim_logo} className="w-32" />
           </Link>
         </div>
-        <div className="right   w-[60%] grid place-content-center">
+        <div className="hidden right   w-[60%] md:grid place-content-center">
           <ul className=" flex justify-center text-lg">
             <Link to="/home">
               {" "}

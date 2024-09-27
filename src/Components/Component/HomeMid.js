@@ -7,7 +7,7 @@ const HomeMid = () => {
   return (
     <div>
       <div
-        className="absolute  lg:block -z-10 overflow-hidden rotate-90 mt-20 ml-96 blur-xl  lg:px-36"
+        className="absolute  lg:block -z-10 overflow-hidden rotate-90 mt-20 lg:ml-96 blur-xl  lg:px-36"
         aria-hidden="true"
       >
         <div
@@ -33,8 +33,8 @@ const HomeMid = () => {
           }}
         ></div>
       </div>
-      <div className="mt-10  border-black flex justify-center">
-        <div className="left w-[50%] pl-24   py-12 px-5">
+      <div className="w-full mt-10  border-black lg:py-10 lg:flex justify-center">
+        <div className="left lg:w-[50%] lg:pl-24   lg:py-12 px-5">
           <DelayedComponent state="animate-left-to-right">
             <h1 className="text-4xl  font-semibold text-zinc-600">
               What we offer?
@@ -59,9 +59,9 @@ const HomeMid = () => {
             </p>
           </DelayedComponent>
         </div>
-        <div className="right w-[50%]  py-12 px-5">
+        <div className="right lg:w-[50%]  lg:py-12 px-5 mt-10">
           <DelayedComponent state="animate-right-to-left">
-            <h1 className="text-4xl  font-semibold text-zinc-600">Product</h1>
+            <h1 className="text-4xl  font-semibold text-zinc-600 ">Product</h1>
           </DelayedComponent>
           <DelayedComponent state="animate-right-to-left">
             <p className="tracking-wide text-lg mt-5 text-zinc-600">
@@ -75,8 +75,8 @@ const HomeMid = () => {
           </DelayedComponent>
         </div>
       </div>
-      <div className="mt-10  border-black flex justify-center pb-28">
-        <div className="left w-[50%] pl-24   grid place-content-center">
+      <div className="mt-10  border-black md:flex justify-center px-5 lg:pb-28">
+        <div className="left lg:w-[50%] lg:pl-24   grid place-content-center">
           <DelayedComponent state="animate-left-to-right">
             <h1 className="text-4xl  font-semibold text-zinc-600">
               Our Mission
@@ -94,15 +94,15 @@ const HomeMid = () => {
             </p>
           </DelayedComponent>
         </div>
-        <div className="right w-[50%]  flex justify-center">
+        <div className="right lg:w-[50%] items-center lg:my-0 my-5  md:flex justify-center">
           <img
             alt=""
-            className="w-48 m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
+            className="w-fit lg:w-48 lg:m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
             src={container}
           />
           <img
             alt=""
-            className="w-48 m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
+            className="w-fit lg:w-48 mt-5 lg:mt-0 lg:m-10 hover:scale-110 transition duration-500 border border-gray-400 rounded-lg"
             src={lab_working}
           />
         </div>
