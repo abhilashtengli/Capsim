@@ -20,24 +20,24 @@ const Header = () => {
           <ul className=" flex justify-center text-lg">
             <Link to="/home">
               {" "}
-              <li className="mx-14 text-lg font-semibold hover:border-blue-400 transition duration-400 hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-14 text-lg font-semibold hover:border-blue-400 transition duration-400 hover:text-blue-900 text-[#6286ff] border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Home
               </li>{" "}
             </Link>
             <Link to="/about">
               {" "}
-              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-[#6286ff] border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 About
               </li>{" "}
             </Link>
             <Link to="/product">
-              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-[#6286ff] border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Product
               </li>{" "}
             </Link>
             <Link to="/contact">
               {" "}
-              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-blue-500 border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
+              <li className="mx-14 text-lg font-semibold hover:border-blue-400 hover:text-blue-900 text-[#6286ff] border border-gray-300 bg-white rounded-lg bg-opacity-50 px-3">
                 Contact
               </li>
             </Link>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         <div>
           <FontAwesomeIcon
-            className=" w-5 h-8 text-blue-500 mr-3"
+            className=" w-5 h-8 text-[#6286ff] mr-3"
             icon={menuOpen ? faXmark : faBars}
             onClick={() => setMenuOpen(!menuOpen)}
           />
@@ -70,7 +70,7 @@ const Header = () => {
         >
           <ul className="h-screen w-screen border-black font-bold space-y-6 text-center text-zinc-600 text-2xl  grid place-content-center">
             <motion.li
-              className="px-8 py-2 text-blue-500"
+              className="px-8 py-2 text-[#6286ff]"
               initial={{
                 y: 10,
                 opacity: 0,
@@ -89,7 +89,7 @@ const Header = () => {
               </Link>
             </motion.li>
             <motion.li
-              className="px-4 py-2 text-blue-500"
+              className="px-4 py-2 text-[#6286ff]"
               initial={{
                 y: 10,
                 opacity: 0,
@@ -108,7 +108,7 @@ const Header = () => {
               </Link>
             </motion.li>
             <motion.li
-              className="px-4 py-2 text-blue-500"
+              className="px-4 py-2 text-[#6286ff]"
               initial={{
                 y: 10,
                 opacity: 0,
@@ -127,7 +127,7 @@ const Header = () => {
               </Link>
             </motion.li>
             <motion.li
-              className="px-4 py-2 text-blue-500"
+              className="px-4 py-2 text-[#6286ff]"
               initial={{
                 y: 10,
                 opacity: 0,

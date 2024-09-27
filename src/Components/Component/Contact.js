@@ -169,7 +169,11 @@ const Contact = () => {
             </p>
           </section>
           <ul className="flex gap-16  -ml-1">
-            <Link to="/">
+            <a
+              href="http://www.linkedin.com/in/chiraag-lodha-46abb132b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,8 +186,12 @@ const Contact = () => {
                   />
                 </svg>
               </li>
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              href="https://x.com/capsim505"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -196,8 +204,12 @@ const Contact = () => {
                   />
                 </svg>
               </li>
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61566286208207"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,12 +222,12 @@ const Contact = () => {
                   />
                 </svg>
               </li>
-            </Link>
+            </a>
           </ul>
         </div>
         <div className=" lg:w-[50%] lg:pl-20">
-          <div className="relative  bg-white z-10 lg:mx-0 mx-4  border lg:w-[25rem]  px-5 border-blue-500  pt-10 pb-5 rounded-lg">
-            <h2 className="text-xl font-bold mb-4 text-blue-500 text-center animate-bottom-to-top">
+          <div className="relative  bg-white z-10 lg:mx-0 mx-4  border lg:w-[25rem]  px-5 border-[#6286ff]  pt-10 pb-5 rounded-lg">
+            <h2 className="text-xl font-bold mb-4 text-[#6286ff] text-center animate-bottom-to-top">
               Contact
             </h2>
 
