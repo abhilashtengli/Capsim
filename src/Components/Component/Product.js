@@ -66,7 +66,7 @@ const Product = () => {
               <img
                 alt=""
                 src={img2}
-                className="lg:w-72 lg:mt-28 cover rounded-lg my-5 border border-black hover:scale-110 transition duration-500"
+                className="lg:w-72 lg:mt-28 cover rounded-lg my-5  hover:scale-110 transition duration-500"
               />
             </DelayedComponent>
           </div>
