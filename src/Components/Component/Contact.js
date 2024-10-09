@@ -16,7 +16,6 @@ const Contact = () => {
   const form = useRef();
   const [sentMessage, setSentMessage] = useState(true);
   const [show, setShow] = useState(false);
-  // const whatsappLink = "https://wa.me/6362566003";
 
   const sendEmail = (e) => {
     e.preventDefault();
